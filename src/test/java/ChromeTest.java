@@ -7,9 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.params.shadow.com.univocity.parsers.conversions.Conversions.trim;
 
@@ -33,8 +31,7 @@ public class ChromeTest {
     }
     @Test
 
-    void shouldPositiveTest() throws InstantiationException {
-        driver.get("http://localhost:9999/");
+    void shouldPositiveTest() throws InstantiationException {driver.get("http://localhost:9999/");
         List<WebElement> inputs = driver.findElements(By.tagName("input"));
         inputs.get(0).sendKeys("Иванов Иван");
         inputs.get(1).sendKeys("+79001112233");
